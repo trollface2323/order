@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fortawesome/fontawesome-free/css/all.css";
 import "@fortawesome/fontawesome-free/js/all.min.js";
 
+// import "./wow.min.js"
+
 Vue.config.productionTip = false
 
 new Vue({
