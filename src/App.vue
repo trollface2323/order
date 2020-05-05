@@ -10,16 +10,16 @@
                 <div class="col-auto ramka ">
                     Выбор участка
                 </div>
-                <div class="col-1 ramka">
+                <div class="col-auto ramka">
                     О Поселке
                 </div>
                 <div class="col-auto ramka">
                     Инфраструктура
                 </div>
-                <div class="col-1 ramka">
+                <div class="col-auto ramka">
                     Как Купить
                 </div>
-                <div class="col-1 ramka" style="color: red">
+                <div class="col-auto ramka" style="color: red">
                     Акции
                 </div>
                 <div class="col-auto offset-1 ramka">
@@ -100,11 +100,13 @@
                 <h5 style="color: red">Коттеджный Поселок</h5>
                 <span style=" font-size: 7em"> Аннинские просторы</span>
                 <p style="margin-top: 3em; color: red"> Участки даром</p>
-                <button class="button" @click="show_popup">Записаться</button>
+
+                <Pop_up/>
+
             </div>
-            <!--TODO: ПЕРЕДЕЛАТЬ ПОПАП ЧЕРЕЗ БУТСРАП С ЗАТЕМНЕНИЕМ-->
-            <Pop_up/>
-                        <button type="button" data-toggle="modal" data-target="#Popup">Open modal</button>
+
+
+
 
 
         </div>
@@ -129,7 +131,7 @@
         },
         data() {
             return {
-                menu: false,
+                menu: true,
             }
         },
         methods: {
@@ -173,7 +175,7 @@
     }
 
     #main1 {
-        background-color: green;
+        background-color: pink;
         height: 1200px;
     }
 
