@@ -31,7 +31,7 @@
                 <!--      Кнопка меню-->
 
                 <div class="col-1 offset-1 pr-5 ramka">
-                    <button type="button" class="btn btn-outline float-right" @click="open_menu">
+                    <button type="button" class="btn btn-outline float-right" data-target="#menu" data-toggle="modal">
                         <i class="fas fa-list-ul" style="font-size: 35px"></i>
                     </button>
                 </div>
@@ -102,11 +102,9 @@
                 <p style="margin-top: 3em; color: red"> Участки даром</p>
 
                 <Pop_up/>
+                <Pop_menu/>
 
             </div>
-
-
-
 
 
         </div>
@@ -116,32 +114,33 @@
     </div>
 
 
-
 </template>
 
 <script>
-    import Pop_up from "@/components/Pop_up";
-    import Stock from "@/components/Stock";
+    import Pop_up from "./components/Pop_up";
+    import Stock from "./components/Stock";
+    import Pop_menu from "./components/Pop_menu";
 
     export default {
         name: 'App',
         components: {
             Pop_up,
+            Pop_menu,
             Stock
         },
         data() {
             return {
-                menu: true,
+                menu: false,
             }
         },
         methods: {
-            open_menu() {
-                this.menu = true
-            },
-
-            close_menu() {
-                this.menu = false
-            }
+            // open_menu() {
+            //     this.menu = true
+            // },
+            //
+            // close_menu() {
+            //     this.menu = false
+            // }
         }
     }
 
@@ -178,7 +177,6 @@
         background-color: pink;
         height: 1200px;
     }
-
 
 
 </style>

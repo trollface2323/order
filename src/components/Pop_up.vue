@@ -3,7 +3,7 @@
         <button type="button" class="button" data-toggle="modal" data-target="#Popup">Open modal</button>
 
         <div class="modal fade" id="Popup" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div>
 
@@ -20,6 +20,7 @@
                             <input type="text" placeholder="дата"/>
                         </form>
                         <button class="button" style="margin: 10px 35px">Записаться</button>
+
                     </div>
                 </div>
             </div>
@@ -50,9 +51,8 @@
         height: 50px;
     }
 
-    .pop {
-        width: 33%;
-        height: 33%;
+    .d-flex {
+        float: right;
     }
 
 
