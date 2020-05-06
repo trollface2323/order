@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div >
                     <div>
-
+<!-- TODO поставить ровно кнопку и текст перед ней-->
                         <span>89999999999</span>
                     </div>
                     <div>
