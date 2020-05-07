@@ -161,18 +161,6 @@
         outline: 2px solid red;
     }
 
-    .menu {
-
-        float: right;
-        width: 50%;
-        height: 100%;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        font-size: 40px;
-        background-image: url(//cs11.pikabu.ru/post_img/big/2019/08/11/9/1565537955180896977.jpg);
-    }
-
     #main1 {
         background-color: pink;
         height: 1200px;
