@@ -1,7 +1,7 @@
 <template>
     <div class="modal fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg menu align-items-start" role="document">
-            <div class="modal-content" style="padding-left: 40px">
+            <div class="modal-content bg-cover" style="padding-left: 40px; background-image: url(//news.liga.net/images/general/2019/09/11/20190911154809-5288.jpg?v=1568211325)">
                 <div class="modal-header">
                     <div class="d-flex">
                         89999999999<br>
