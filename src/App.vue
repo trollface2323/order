@@ -1,9 +1,9 @@
 <template>
     <div id="main">
         <!--      Блок первой кртинкии-->
-        <div id="main1">
+        <div class="container-fluid" id="main1">
 
-            <div class="row pl-4 align-items-center ramka" style="height: 100px; font-size: 27px">
+            <div class="row pl-4 align-items-center ramka" style="height: 100px">
                 <div class="col-auto mr-auto ramka">
                     Тут картинка
                 </div>

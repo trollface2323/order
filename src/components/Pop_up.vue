@@ -2,7 +2,7 @@
     <div>
         <button type="button" class="button" data-toggle="modal" data-target="#Popup">Open modal</button>
 
-        <div class="modal fade" id="Popup" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+        <div class="modal fade" id="Popup" tabindex="-2" role="dialog" aria-labelledby="title" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div>

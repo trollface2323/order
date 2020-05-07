@@ -8,7 +8,7 @@
                         hjkl
                     </div>
                     <div class="align-self-center">
-                        <button class="btn btn-success button">
+                        <button class="btn btn-success button" data-toggle="modal" data-target="#Popup">
                             Call US
                         </button>
                     </div>
@@ -16,12 +16,23 @@
                         <span aria-hidden="true" style="padding: 5px">&times;</span>
                     </button>
                 </div>
-                <div>
 
+                <div class="modal-body" style="font-size: 27px">
+                    <div class="d-flex flex-column">
+                        <span>Выбор участка</span>
+                        <span>О поселке</span>
+                        <span>Инфраструктура</span>
+                        <span>Участки</span>
+                        <span>Как купить</span>
+                        <span>Типовые проекты</span>
+                        <span>Новости и акции</span>
+                        <span>Контакты</span>
+                    </div>
                 </div>
-                <div class="modal-body">
-
-
+                <div class="modal-footer justify-content-start">
+                    <div class="d-flex justify-content-start" style="!important;">
+                        Here is some info
+                    </div>
                 </div>
             </div>
 
@@ -43,12 +54,16 @@
         margin-right: 0;
     }
 
-    .button{
+    .button {
         border-radius: 20px;
         background: white;
         color: black;
         margin-left: 20px;
         width: 150px;
+    }
+
+    .modal-body span{
+        margin-top: 15px;
     }
 
 </style>
