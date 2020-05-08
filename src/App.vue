@@ -108,10 +108,12 @@
 
 
         </div>
+        <div></div>
+        <a href="#" title="Вернуться к началу страницы" class="topNubex">Вверх</a>
 
         <Stock/>
 
-        <Scroll/>
+<!--        <Scroll/>-->
 
     </div>
 
@@ -122,12 +124,12 @@
     import Pop_up from "./components/Pop_up";
     import Stock from "./components/Stock";
     import Pop_menu from "./components/Pop_menu";
-    import Scroll from "./components/Scroll";
+    // import Scroll from "./components/Scroll";
 
     export default {
         name: 'App',
         components: {
-            Scroll,
+            // Scroll,
             Pop_up,
             Pop_menu,
             Stock
@@ -138,9 +140,7 @@
             }
         },
         methods: {
-            bg() {
-                document.bgColor = 'red';
-            }
+
         }
     }
 
@@ -166,14 +166,11 @@
         height: 1200px;
     }
 
-    /*a:hover {*/
-    /*    text-decoration: none;*/
-    /*    color: red;*/
-    /*}*/
-    .a{
-        text-decoration: none;
-        color: red;
-
+    .topNubex {
+        position: fixed;
+        left: 45px;
+        top: 150px;
+        z-index: 100;
     }
 
 </style>
