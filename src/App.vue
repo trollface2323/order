@@ -103,8 +103,6 @@
 
                 <Pop_up/>
                 <Pop_menu/>
-                <img src="//news.liga.net/images/general/2019/09/11/20190911154809-5288.jpg?v=1568211325" style="height: 100px">
-
             </div>
 
 

@@ -4,16 +4,20 @@
             <h1 style="margin-left: 20px">
                 Акции и Предложения
             </h1>
+            <div class="d-flex">
+                <button class="btn btn btn-success" data-target="#carousel" data-slide-to="0">first</button>
+                <button class="btn btn btn-success" data-target="#carousel" data-slide-to="1">second</button>
+
+            </div>
             <div class="d-flex ramka" style="height: 300px">
-                <div id="carouselExampleIndicators" class="carousel slide bg-cover" data-ride="carousel"
+                <div id="carousel" class="carousel slide bg-cover" data-ride="carousel"
                      style="margin: auto">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" >
                             <img class="d-block w-100 "
                                  src="//news.liga.net/images/general/2019/09/11/20190911154809-5288.jpg?v=1568211325"
                                  alt="Первый слайд"
@@ -25,11 +29,11 @@
                                  alt="Второй слайд">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
