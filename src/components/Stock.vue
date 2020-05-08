@@ -1,12 +1,13 @@
 <template>
     <div style="background-color: red; height: 1000px">
+        <a name="stock"></a>
         <div style="width: 90%; margin: auto">
             <h1 style="margin-left: 20px">
                 Акции и Предложения
             </h1>
             <div class="d-flex">
-                <button class="btn btn btn-success" data-target="#carousel" data-slide-to="0">first</button>
-                <button class="btn btn btn-success" data-target="#carousel" data-slide-to="1">second</button>
+                <button class="btn btn btn-success active" aria-pressed="true" data-target="#carousel" data-slide-to="0">first</button>
+                <button class="btn btn btn-danger active" aria-pressed="true" data-target="#carousel" data-slide-to="1">second</button>
 
             </div>
             <div class="d-flex ramka" style="height: 300px">

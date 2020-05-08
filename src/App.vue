@@ -19,8 +19,8 @@
                 <div class="col-auto ramka">
                     Как Купить
                 </div>
-                <div class="col-auto ramka" style="color: red">
-                    Акции
+                <div class="col-auto ramka">
+                    <a href="#stock" style="color: red"> Акции </a>
                 </div>
                 <div class="col-auto offset-1 ramka">
                     89999999999
@@ -38,7 +38,7 @@
             </div>
 
             <div>
-                <button style="margin-top: 40px; float: right; margin-right: 20px">
+                <button style="margin-top: 40px; float: right; margin-right: 20px" @click="bg">
                     Переключатель заднего фона
                 </button>
             </div>
@@ -103,12 +103,15 @@
 
                 <Pop_up/>
                 <Pop_menu/>
+
             </div>
 
 
         </div>
 
         <Stock/>
+
+        <Scroll/>
 
     </div>
 
@@ -119,10 +122,12 @@
     import Pop_up from "./components/Pop_up";
     import Stock from "./components/Stock";
     import Pop_menu from "./components/Pop_menu";
+    import Scroll from "./components/Scroll";
 
     export default {
         name: 'App',
         components: {
+            Scroll,
             Pop_up,
             Pop_menu,
             Stock
@@ -133,13 +138,9 @@
             }
         },
         methods: {
-            // open_menu() {
-            //     this.menu = true
-            // },
-            //
-            // close_menu() {
-            //     this.menu = false
-            // }
+            bg() {
+                document.bgColor = 'red';
+            }
         }
     }
 
@@ -165,5 +166,14 @@
         height: 1200px;
     }
 
+    /*a:hover {*/
+    /*    text-decoration: none;*/
+    /*    color: red;*/
+    /*}*/
+    .a{
+        text-decoration: none;
+        color: red;
+
+    }
 
 </style>
