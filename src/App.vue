@@ -5,22 +5,22 @@
 
             <div class="row pl-4 align-items-center ramka" style="height: 100px">
                 <div class="col-auto mr-auto ramka">
-                    Тут картинка
+                    <a href="#">Тут картинка</a>
                 </div>
                 <div class="col-auto ramka ">
-                    Выбор участка
+                    <a href="#">Выбор участка</a>
                 </div>
                 <div class="col-auto ramka">
-                    О Поселке
+                    <a href="#">О Поселке</a>
                 </div>
                 <div class="col-auto ramka">
-                    Инфраструктура
+                    <a href="#">Инфраструктура</a>
                 </div>
                 <div class="col-auto ramka">
-                    Как Купить
+                    <a href="#">Как Купить</a>
                 </div>
                 <div class="col-auto ramka">
-                    <a href="#stock" style="color: red"> Акции </a>
+                    <a href="#stock"> Акции </a>
                 </div>
                 <div class="col-auto offset-1 ramka">
                     89999999999
@@ -36,65 +36,13 @@
                     </button>
                 </div>
             </div>
-
+<!--                 кнопка переключения заднего фона-->
             <div>
                 <button style="margin-top: 40px; float: right; margin-right: 20px" @click="bg">
                     Переключатель заднего фона
                 </button>
             </div>
 
-
-            <!--    Выпадающий список справа-->
-
-            <div v-if="menu == true" class="menu bg-cover" style="color: white">
-                <div class="row">
-                    <div class="col-auto ml-5">
-                        89999999999 <br>
-                        <span style="font-size: 25px"> <i class="fas fa-circle"></i> 08:00 - 20:00</span>
-                    </div>
-                    <div class="col-auto align-self-center">
-                        <button class="btn btn-outline-success" style="font-size: 40px"> Call us</button>
-                    </div>
-                    <div class="col-auto ml-auto mr-5 align-self-center">
-                        <button type="button" @click="close_menu" class="btn btn-outline ramka" style="font-size: 40px">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!--        Список -->
-
-                <div class="row" style="margin-top: 60px">
-                    <div class="col-auto ml-2">
-                        <ul style="list-style-type: none;">
-                            <li>
-                                Выбор участка
-                            </li>
-                            <li>
-                                О Поселке
-                            </li>
-                            <li>
-                                Инфраструктура
-                            </li>
-                            <li>
-                                Участки
-                            </li>
-                            <li>
-                                Как Купить
-                            </li>
-                            <li>
-                                Типовые проекты
-                            </li>
-                            <li>
-                                Новости и Акции
-                            </li>
-                            <li>
-                                Контакты
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
             <div style="margin-top: 20em; margin-left: 7em">
                 <h5 style="color: red">Коттеджный Поселок</h5>
@@ -108,12 +56,12 @@
 
 
         </div>
-        <div></div>
+
         <a href="#" title="Вернуться к началу страницы" class="topNubex">Вверх</a>
 
         <Stock/>
 
-<!--        <Scroll/>-->
+        <!--        <Scroll/>-->
 
     </div>
 
@@ -139,15 +87,22 @@
                 menu: false,
             }
         },
-        methods: {
-
-        }
+        methods: {}
     }
 
 
 </script>
 
-<style>
+<style lang="scss">
+    /*TODO изменить цвет ссылок*/
+    .col-auto a {
+        color: black;
+        &:hover{
+            text-decoration: none;
+            color: black;
+        }
+    }
+
     /*Растяжка картинки*/
     .bg-cover {
         background-repeat: no-repeat;
@@ -171,6 +126,9 @@
         left: 45px;
         top: 150px;
         z-index: 100;
+        height: 100%;
+
     }
+
 
 </style>
