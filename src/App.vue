@@ -1,7 +1,7 @@
 <template>
     <div id="main">
         <!--      Блок первой кртинкии-->
-        <div class="container-fluid" id="main1">
+        <div class="container-fluid" :class="{img1: img1, img2: img2}">
 
             <div class="row pl-4 align-items-center ramka" style="height: 100px">
                 <div class="col-auto mr-auto ramka">
@@ -17,7 +17,7 @@
                     <a href="#">Инфраструктура</a>
                 </div>
                 <div class="col-auto ramka">
-                    <a href="#">Как Купить</a>
+                    <router-link to="/buy"> Как Купить</router-link>
                 </div>
                 <div class="col-auto ramka">
                     <a href="#stock"> Акции </a>
@@ -36,9 +36,9 @@
                     </button>
                 </div>
             </div>
-<!--                 кнопка переключения заднего фона-->
+            <!--                 кнопка переключения заднего фона-->
             <div>
-                <button style="margin-top: 40px; float: right; margin-right: 20px" @click="bg">
+                <button style="margin-top: 40px; float: right; margin-right: 20px" @click="change">
                     Переключатель заднего фона
                 </button>
             </div>
@@ -63,6 +63,8 @@
 
         <!--        <Scroll/>-->
 
+        <router-view></router-view>
+
     </div>
 
 
@@ -84,20 +86,32 @@
         },
         data() {
             return {
-                menu: false,
+                img1: true,
+                img2: false,
             }
         },
-        methods: {}
+        methods: {
+            change() {
+                if (this.img1) {
+                    this.img1 = false;
+                    this.img2 = true;
+                } else {
+                    this.img1 = true;
+                    this.img2 = false;
+                }
+            }
+        }
     }
 
 
 </script>
 
 <style lang="scss">
-    /*TODO изменить цвет ссылок*/
+    /*TODO сделать навигацию по сайту и кнопку смена фона*/
     .col-auto a {
         color: black;
-        &:hover{
+
+        &:hover {
             text-decoration: none;
             color: black;
         }
@@ -130,5 +144,14 @@
 
     }
 
+    .img1 {
+        background-color: yellowgreen;
+        height: 1200px;
+    }
+
+    .img2 {
+        background-color: pink;
+        height: 1200px;
+    }
 
 </style>
